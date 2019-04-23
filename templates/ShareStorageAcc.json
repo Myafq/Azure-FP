@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "SAName": {
+        "type": "string",
+        "defaultValue": "FinalProjectFileShare",
+        "metadata": {
+          "description": "Name for Storage Account used for file share."
+        }
+      }
+    },
+    "resources": [
+        {
+            "name": "[parameters('SAName')]",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2015-06-15",
+            "location": "centralus",
+            "tags": {
+                "displayName": "[parameters('SAName')]"
+            },
+            "properties": {
+                "accountType": "Standard_LRS"
+            }
+        }
+    ]
+}
