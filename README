@@ -1,1 +1,8 @@
-This is scripts and templates for final project of Azure
+This is scripts and templates for final project of DevOps to Infrastructure Engineer (Azure) course.
+
+Prerequisites:
+
+- You have to have Az powershell module installed
+- You have to be logged into Azure account in your powershell cli
+
+For the first run you should add 'ssl' argument to create-everyth.ps1 script. It will create certificates for vpn.
