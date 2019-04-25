@@ -528,5 +528,11 @@
               }
             }
       }
-    ]
+    ],
+    "outputs": {
+      "site-url": {
+        "type": "string",
+        "value": "[concat('https://', parameters('vmssName'), '.', parameters('location'), '.cloudapp.azure.com')]"
+      }
+    }
   }

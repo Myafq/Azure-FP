@@ -6,3 +6,5 @@ Prerequisites:
 - You have to be logged into Azure account in your powershell cli
 
 For the first run you should add 'ssl' argument to create-everyth.ps1 script. It will create certificates for vpn.
+
+
